@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div class="calc">
+        <div class="display" id="display"></div>
+        <table>
+            <tr>
+                <td onclick="clearDisplay()" colspan="2">Clr</td>
+                <td onclick="operate('%')">%</td>
+                <td onclick="operate('/')">/</td>
+            </tr>
+            <tr>
+                <td onclick="appendSym('7')">7</td>
+                <td onclick="appendSym('8')">8</td>
+                <td onclick="appendSym('9')">9</td>
+                <td onclick="operate('x')">x</td>
+            </tr>
+            <tr>
+                <td onclick="appendSym('4')">4</td>
+                <td onclick="appendSym('5')">5</td>
+                <td onclick="appendSym('6')">6</td>
+                <td onclick="operate('-')">-</td>
+            </tr>
+            <tr>
+                <td onclick="appendSym('1')">1</td>
+                <td onclick="appendSym('2')">2</td>
+                <td onclick="appendSym('3')">3</td>
+                <td onclick="operate('+')">+</td>
+            </tr>
+            <tr>
+                <td onclick="appendSym('0')" colspan="2">0</td>
+                <td onclick="appendSym('.')">.</td>
+                <td onclick="calculateResult('=')">=</td>
+            </tr>
+        </table>
+    </div>
+    <script src="calc.js"></script>
+</body>
+</html>
