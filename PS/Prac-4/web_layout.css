@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-image: linear-gradient(to top right,rgb(78, 60, 90),rgb(95, 155, 215),rgb(116, 247, 192));
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    size: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.sidenav{
+    background-color:rgba(0, 0, 0, 0.211);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:center;
+    position: fixed;
+    width: 15vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.sidenavbtn{
+    text-decoration: none;
+    margin: 1rem;
+    padding: 1rem;
+    font-family: Trebuchet MS;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+.sidenavbtn:hover{
+    color: rgb(250, 253, 165);
+}
+.sidenavimg{
+    margin: 1rem;
+    padding: 1rem;
+    width: 13vw;
+    height: 30vh;
+    background-image: url("travel_logo1.png");
+    background-size: cover;
+}
+.Content{
+    margin-left: 15vw;
+    width: 85vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+.Homepage{
+    background-image: url(homeimg1.jpg);
+    background-size: cover;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+}
+.searchbar{
+    display: flex;
+    justify-content: center;
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 1rem;
+    padding-left: 5px;
+}
+input[type=search]{
+    background-color: rgba(240, 248, 255, 0.411);
+    padding-left: 5px;
+    font-size: 1rem;
+    border-width: 0;
+    width: 15vw;
+    height: 5vh;
+}
+input[type=search]:hover{
+    color: black;
+    padding-left: 5px;
+    font-size: 1rem;
+    background-color: rgb(255, 255, 255);
+    transition-duration: 0.25s;
+}
+input[type=submit]{
+    padding-bottom: 2px;
+    font-size: 1rem;
+    font-family:system-ui;
+    background-color: rgb(105, 235, 114);
+    border-width: 0;
+    width: 5vw;
+    height: 5vh;
+}
+input[type=submit]:hover{
+    background-color: rgb(60, 255, 132);
+}
+.Guide,.ContactUs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+.image {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+img{
+    width: 85vw;
+    height: 100vh;
+}
+@keyframes fade {
+    from {opacity: .6}
+    to {opacity: 1}
+}
+.Travel{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 100vh;
+}
+.quotes{
+    width: 27.9vw;
+    height: 100vh;
+}
+.contactinfo{
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    color: aliceblue;
+}
+hr{
+    width: 25vw;
+    height: 3px;
+    background-color: aliceblue;
+}
+.svg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.svg1,.svg2,.svg3{
+    background-size: cover;
+    margin: 2rem;
+    padding: 2rem;
+    width: 2rem;
+    height: 2rem;
+}
+.svg1{
+    background-image: url(iglogo.png);
+}
+.svg2{
+    background-image: url(fblogo.png);
+}
+.svg3{
+    background-image: url(xlogo.png);
+}
