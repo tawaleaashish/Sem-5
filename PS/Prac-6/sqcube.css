@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top right,rgb(154, 234, 140), rgb(236, 254, 76));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    font-family:Calibri;
+}
+table,tr,td{
+    margin: 1rem;
+    padding: 1rem;
+    border-style: solid;
+    border-width: 2px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.096);
+}
+td{
+    font-size: 1rem;
+    font-family: 'Trebuchet MS';
+    text-align: center;
+}
