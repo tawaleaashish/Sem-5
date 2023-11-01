@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: system-ui;
+}
+.navbar{
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+form{
+    height: 3.5rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    padding: 1rem;
+    padding-right: 5rem;
+}
+input[type=text]{
+    height: 2rem;
+    width: 18vw;
+    background-image: url("search-removebg.png");
+    border-width: 2px;
+    padding-left: 2vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.list{
+    margin: 2rem;
+    margin-left: 6vw;
+    padding: 1rem;
+}
+li{
+    padding: 0.25rem;
+}
