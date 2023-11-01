@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to top right,rgb(166, 248, 203),rgb(144, 144, 245));
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.registrationbox{
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+    background-color: rgba(240, 248, 255, 0.397);
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+hr{
+   height: 0.2rem;
+   background-color: black;
+   margin: 0.2rem;
+}
+div{
+    text-align: center;
+    font-family: Verdana;
+}
+.Text{
+    margin: 0.4rem;
+    padding: 0.2rem;
+}
+input[type=text],input[type=password],input[type=date]{
+    min-width: 5px;
+    margin: 0.4rem;
+    padding: 0.2rem;
+}
+.genderbutton{
+    margin: 0.4rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.gender{
+    margin: 0.4rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.formbutton{
+    margin: 1rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+input[type=button],input[type=reset]{
+    min-width: 5px;
+    margin: 0.4rem;
+    padding: 0.2rem;
+}
