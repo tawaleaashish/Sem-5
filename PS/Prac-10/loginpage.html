@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="loginpage.css">
+</head>
+<body>
+    <div id="loginpage">
+        <form>
+            <div class="loginHeader">Login</div>
+            <div class="formElements"><div class="elements">Username</div><input type="text" id="UN"></div>
+            <div class="formElements"><div class="elements">Password</div><input type="password" id="PW"></div>
+            <div class="formElements"><input type="button" value="Log In" onclick="login()"></div>  
+            <div class="formElements"><u class="forgetP" onclick="register()">Sign Up/</u><u class="forgetP" onclick="forgetpassword()">forget password</u></div>  
+        </form>
+    </div>
+    <div id="signUpPage" style="display: none;">
+        <form>
+            <div class="loginHeader">Sign Up</div>
+            <div class="formElements"><div class="elements">First Name</div><input type="text" id="FN"></div>
+            <div class="formElements"><div class="elements">Last Name</div><input type="text" id="LN"></div>
+            <div class="formElements"><div class="elements">E-mail</div><input type="email" id="email"></div>
+            <div class="formElements"><div class="elements">Username</div><input type="text" id="userN"></div>
+            <div class="formElements"><div class="elements">Password</div><input type="password" id="passW"></div>
+            <div class="formElements"><input type="button" value="Register" onclick="submitData()"></div>  
+            <div class="formElements"><u class="forgetP" onclick="loginpage()">Login</u></div>  
+        </form>
+    </div>
+    <div id="loginSpage" style="display: none;">
+    <form>
+        <div class="formElements">Login Successfull !!</div>
+        <div class="formElements"><u class="forgetP" onclick="loginpage()">Logout</u></div>  
+    </form>
+    </div>
+    <div id="forgetPpage" style="display: none;">
+        <form>
+            <div class="loginHeader">Forget Password</div>
+            <div class="formElements"><div class="elements">New Password</div><input type="password" id="newpw"></div>
+            <div class="formElements"><div class="elements">Re-Enter Password</div><input type="password" id="reEnterpw"></div>
+            <div class="formElements"><input type="button" value="Submit" onclick="newpassword()"></div>  
+        </form>
+    </div>
+    <script src="loginpage.js"></script>
+</body>
+</html>

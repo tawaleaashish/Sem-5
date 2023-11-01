@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    background-color: rgba(163, 163, 163, 0.458);
+    margin: 3rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.loginHeader{
+    padding: 1rem;
+    font-family: "Candara";
+    font-size: 1.75rem;
+}
+.formElements{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    font-family: system-ui;
+    font-size: 1.15rem;
+}
+.elements{
+    padding-right: 1rem;
+}
+input[type=text],input[type=password],input[type=email]{
+    padding: 0.25rem;
+}
+input[type=text]:hover,input[type=password]:hover,input[type=email]:hover{
+    background-color: rgba(255, 255, 255, 0.938);
+}
+input[type=button]{
+    background-color: rgb(181, 253, 227);
+    height: 2rem;
+    width: 5rem;
+}
+input[type=button]:hover{
+    background-color: rgb(159, 253, 192);
+    cursor: grab;
+}
+.forgetP{
+    font-size: 1rem;
+    color: rgb(95, 95, 120);
+}
+.forgetP:hover{
+    cursor: pointer;
+}
